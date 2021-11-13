@@ -13,5 +13,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         TARGET_REPO: dong-jianbin/docment
         TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: yarn && yarn docs:build && cd docs/.vuepress/dist && echo 'docs.ddoogg.cn' > CNAME && cd -
+        BUILD_SCRIPT: yarn && yarn build && cd docs/.vuepress/dist && echo 'docs.ddoogg.cn' > CNAME && cd -
         BUILD_DIR: docs/.vuepress/dist/
