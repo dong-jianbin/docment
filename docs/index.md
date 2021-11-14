@@ -1,6 +1,6 @@
 ---
 home: true
-# heroImage: /img/web.png
+heroImage: https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/img/home.png
 heroText: 董建斌的博客
 tagline: 仍是此间少年，具气吞山河之志。
 # actionText: 立刻进入 →
