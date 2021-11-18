@@ -60,6 +60,14 @@ module.exports = [
     ],
   },
   {
+    text: '项目',
+    link: '/project/',
+    items: [
+      { text: '超级工作流', link: '/pages/3ceacd/' },
+      { text: 'kafka2db', link: '/pages/601d2d/' },
+    ],
+  },
+  {
     text: '更多',
     link: '/more/',
     items: [
