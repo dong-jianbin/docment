@@ -9,7 +9,7 @@ module.exports = [
       {
         text: 'FS安装使用',
         items: [
-          { text: '安装使用', link: '/pages/a61298/' },
+          { text: 'FS安装使用', link: '/pages/a61298/' },
           // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
         ],
       },
