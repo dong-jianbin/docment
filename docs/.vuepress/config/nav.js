@@ -9,14 +9,14 @@ module.exports = [
       {
         text: '服务端',
         items: [
-          { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          { text: '安装使用freeswitch', link: '/pages/a61298/' },
           // { text: 'Vue', link: '/pages/5d463fbdb172d43b/' },
         ],
       },
       {
-        text: '客户端',
+        text: '呼叫中心',
         items: [
-          { text: '《JavaScript教程》', link: '/note/javascript/' },
+          { text: '项目架构', link: '/pages/c3da99/' },
         ],
       },
     ],
