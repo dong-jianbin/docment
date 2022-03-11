@@ -22,6 +22,13 @@ module.exports = [
     ],
   },
   {
+    text: '知识图谱',
+    link: '/KnowledgeGraph/',
+    items: [
+      { text: 'neo4j', link: '/pages/ec61c3/' },
+    ],
+  },
+  {
     text: '项目',
     link: '/project/',
     items: [
