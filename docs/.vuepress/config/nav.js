@@ -37,6 +37,13 @@ module.exports = [
     ],
   },
   {
+    text: '大数据',
+    link: '/pages/2c361a/',
+    items: [
+      { text: 'hadoop入门', link: '/pages/81241e/' }
+    ],
+  },
+  {
     text: '收藏',
     link: '/pages/beb6c0bd8a66cea6/',
     // items: [
