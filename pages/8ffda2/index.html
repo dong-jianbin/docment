@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>devops | 董建斌的博客</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/img/home.jpeg">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.b0cf3990.css" as="style"><link rel="preload" href="/assets/js/app.6d4d842b.js" as="script"><link rel="preload" href="/assets/js/2.0fd9f73a.js" as="script"><link rel="preload" href="/assets/js/24.588b162f.js" as="script"><link rel="prefetch" href="/assets/js/10.30079daa.js"><link rel="prefetch" href="/assets/js/11.7f6a0939.js"><link rel="prefetch" href="/assets/js/12.ed5435d3.js"><link rel="prefetch" href="/assets/js/13.25b8826c.js"><link rel="prefetch" href="/assets/js/14.76f97bc8.js"><link rel="prefetch" href="/assets/js/15.fbc57fc3.js"><link rel="prefetch" href="/assets/js/16.00f2abfa.js"><link rel="prefetch" href="/assets/js/17.bc136f60.js"><link rel="prefetch" href="/assets/js/18.4d03df41.js"><link rel="prefetch" href="/assets/js/19.479cc21a.js"><link rel="prefetch" href="/assets/js/20.7e179576.js"><link rel="prefetch" href="/assets/js/21.240900bb.js"><link rel="prefetch" href="/assets/js/22.760ddcdd.js"><link rel="prefetch" href="/assets/js/23.0eab3370.js"><link rel="prefetch" href="/assets/js/25.1c0ee689.js"><link rel="prefetch" href="/assets/js/26.85709468.js"><link rel="prefetch" href="/assets/js/27.b7099b40.js"><link rel="prefetch" href="/assets/js/28.c35924d3.js"><link rel="prefetch" href="/assets/js/29.8cafffa8.js"><link rel="prefetch" href="/assets/js/3.deaca20e.js"><link rel="prefetch" href="/assets/js/30.575b6478.js"><link rel="prefetch" href="/assets/js/31.e17b3314.js"><link rel="prefetch" href="/assets/js/32.05421eeb.js"><link rel="prefetch" href="/assets/js/33.d17be6c8.js"><link rel="prefetch" href="/assets/js/34.bdacecf3.js"><link rel="prefetch" href="/assets/js/35.2cdfbdfe.js"><link rel="prefetch" href="/assets/js/4.c0dbb0eb.js"><link rel="prefetch" href="/assets/js/5.41b1224c.js"><link rel="prefetch" href="/assets/js/6.e5641358.js"><link rel="prefetch" href="/assets/js/7.f95c6863.js"><link rel="prefetch" href="/assets/js/8.079a2b3f.js"><link rel="prefetch" href="/assets/js/9.34e7a5b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b0cf3990.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/img/home.jpeg" alt="董建斌的博客" class="logo"> <span class="site-name can-hide">董建斌的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FreeSwitch" class="dropdown-title"><a href="/web/" class="link-title">FreeSwitch</a> <span class="title" style="display:none;">FreeSwitch</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>安装使用</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a61298/" class="nav-link">FS安装使用</a></li></ul></li><li class="dropdown-item"><h4>呼叫中心</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/c3da99/" class="nav-link">项目架构</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识图谱" class="dropdown-title"><a href="/KnowledgeGraph/" class="link-title">知识图谱</a> <span class="title" style="display:none;">知识图谱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ec61c3/" class="nav-link">neo4j</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><a href="/project/" class="link-title">项目</a> <span class="title" style="display:none;">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3ceacd/" class="nav-link">超级工作流</a></li><li class="dropdown-item"><!----> <a href="/pages/601d2d/" class="nav-link">kafka2db</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/2c361a/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/81241e/" class="nav-link">hadoop入门</a></li></ul></div></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/dong-jianbin/docment" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/img/22168884.jpeg"> <div class="blogger-info"><h3>董建斌</h3> <span>此间少年 气吞山河</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FreeSwitch" class="dropdown-title"><a href="/web/" class="link-title">FreeSwitch</a> <span class="title" style="display:none;">FreeSwitch</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>安装使用</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a61298/" class="nav-link">FS安装使用</a></li></ul></li><li class="dropdown-item"><h4>呼叫中心</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/c3da99/" class="nav-link">项目架构</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识图谱" class="dropdown-title"><a href="/KnowledgeGraph/" class="link-title">知识图谱</a> <span class="title" style="display:none;">知识图谱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ec61c3/" class="nav-link">neo4j</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><a href="/project/" class="link-title">项目</a> <span class="title" style="display:none;">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3ceacd/" class="nav-link">超级工作流</a></li><li class="dropdown-item"><!----> <a href="/pages/601d2d/" class="nav-link">kafka2db</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/2c361a/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/81241e/" class="nav-link">hadoop入门</a></li></ul></div></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/dong-jianbin/docment" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>flow-pro</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DataCenterKafkaToDB</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>devops</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/8ffda2/" aria-current="page" class="active sidebar-link">devops</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/project/#项目" data-v-06225672>项目</a></li><li data-v-06225672><a href="/project/#devops" data-v-06225672>devops</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/dong-jianbin/" target="_blank" title="作者" class="beLink" data-v-06225672>dong-jianbin</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-05-07</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">devops<!----></h1> <div class="page-slot page-slot-top"><!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+     <ins class="adsbygoogle"
+          style="display:inline-block;width:100%;max-height:90px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6625304284"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="theme-vdoing-content content__default"><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503163512.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430160445.png" alt=""></p> <h3 id="linux系统设置"><a href="#linux系统设置" class="header-anchor">#</a> linux系统设置</h3> <blockquote><p>mysql远程连接需要关闭防火墙</p> <p>gitlab需要关闭selinux</p></blockquote> <h4 id="linux-更新"><a href="#linux-更新" class="header-anchor">#</a> linux 更新</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum update -y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="关闭selinux"><a href="#关闭selinux" class="header-anchor">#</a> 关闭selinux</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>vi /etc/sysconfig/selinux   SELINUX=disabled
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="关闭防火墙"><a href="#关闭防火墙" class="header-anchor">#</a> 关闭防火墙</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl stop firewalld
+systemctl disable firewalld
+systemctl status firewalld
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="容器-docker"><a href="#容器-docker" class="header-anchor">#</a> 容器-docker</h3> <blockquote><p>有网络安装</p></blockquote> <h4 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code> yum <span class="token function">install</span> <span class="token function">docker</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="启动"><a href="#启动" class="header-anchor">#</a> 启动</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">service</span> <span class="token function">docker</span> start
+<span class="token function">chkconfig</span> <span class="token function">docker</span> on
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="升级"><a href="#升级" class="header-anchor">#</a> 升级</h4> <blockquote><p>Habor 需要17版本以上的docker</p></blockquote> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">rpm</span> -qa <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">docker</span>  <span class="token comment">#列出包含docker字段的软件的信息</span>
+<span class="token comment"># docker-1.13.1-161.git64e9980.el7_8.x86_64</span>
+<span class="token comment"># docker-common-1.13.1-161.git64e9980.el7_8.x86_64</span>
+<span class="token comment"># docker-client-1.13.1-161.git64e9980.el7_8.x86_64</span>
+yum remove docker-*  <span class="token comment">#移除上面显示的软件包</span>
+
+<span class="token function">curl</span> -fsSL https://get.docker.com/ <span class="token operator">|</span> <span class="token function">sh</span> <span class="token comment">#使用curl 安装docker最新版本</span>
+
+systemctl restart <span class="token function">docker</span>  <span class="token comment">#重启docker</span>
+systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span>   <span class="token comment">#设置开机启动</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="容器组-docker-compose"><a href="#容器组-docker-compose" class="header-anchor">#</a> 容器组-docker-compose</h3> <h4 id="下载安装"><a href="#下载安装" class="header-anchor">#</a> 下载安装</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">sudo</span> <span class="token function">curl</span> -L https://get.daocloud.io/docker/compose/releases/download/1.25.1/docker-compose-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> -s<span class="token variable">`</span></span>-<span class="token variable"><span class="token variable">`</span><span class="token function">uname</span> -m<span class="token variable">`</span></span> -o /usr/local/bin/docker-compose
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="添加可执行权限"><a href="#添加可执行权限" class="header-anchor">#</a> 添加可执行权限</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo chmod +x /usr/local/bin/docker-compose
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="测试安装结果"><a href="#测试安装结果" class="header-anchor">#</a> 测试安装结果</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker-compose --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="代码管理-gitlab"><a href="#代码管理-gitlab" class="header-anchor">#</a> 代码管理-gitlab</h3> <h4 id="编写docker-compose-yml文件"><a href="#编写docker-compose-yml文件" class="header-anchor">#</a> 编写docker-compose.yml文件</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/dockerfile/gitlab
+<span class="token function">touch</span> docker-compose.yml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">&quot;3&quot;</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">gitlab</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> docker.io/gitlab/gitlab<span class="token punctuation">-</span>ee<span class="token punctuation">:</span>latest
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> gitlab
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">hostname</span><span class="token punctuation">:</span> <span class="token string">'192.168.210.10'</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">GITLAB_OMNIBUS_CONFIG</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+        external_url &quot;http://192.168.210.10:8929&quot;
+        gitlab_rails['gitlab_shell_ssh_port'] = 2222
+        gitlab_rails['gitlab_email_enabled'] = true
+        gitlab_rails['gitlab_email_from'] = 'xxx@xxxxx.com'
+        gitlab_rails['gitlab_email_display_name'] = 'xxx'
+        gitlab_rails['gitlab_email_reply_to'] = 'xxxx@xxxxx.com'
+        gitlab_rails['smtp_enable'] = true
+        gitlab_rails['smtp_address'] = &quot;smtp.mxhichina.com&quot;
+        gitlab_rails['smtp_port'] = 465
+        gitlab_rails['smtp_user_name'] = &quot;xxx@xxxx.com&quot;
+        gitlab_rails['smtp_password'] = &quot;xxxxx&quot;
+        gitlab_rails['smtp_domain'] = &quot;smtp.mxhichina.com&quot;
+        gitlab_rails['smtp_authentication'] = &quot;login&quot;
+        gitlab_rails['smtp_enable_starttls_auto'] = true
+        gitlab_rails['smtp_openssl_verify_mode'] = 'peer'
+        gitlab_rails['smtp_tls'] = true</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">'8929:8929'</span>
+      <span class="token punctuation">-</span> <span class="token string">'2222:22'</span>
+      <span class="token punctuation">-</span> <span class="token string">'8443:443'</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">'/root/soft/gitlab/config:/etc/gitlab'</span>
+      <span class="token punctuation">-</span> <span class="token string">'/root/soft/gitlab/logs:/var/log/gitlab'</span>
+      <span class="token punctuation">-</span> <span class="token string">'/root/soft/gitlab/data:/var/opt/gitlab'</span>
+    <span class="token key atrule">logging</span><span class="token punctuation">:</span>
+      <span class="token key atrule">driver</span><span class="token punctuation">:</span> <span class="token string">&quot;json-file&quot;</span>
+      <span class="token key atrule">options</span><span class="token punctuation">:</span>
+        <span class="token key atrule">max-size</span><span class="token punctuation">:</span> <span class="token string">&quot;20m&quot;</span>
+        <span class="token key atrule">max-file</span><span class="token punctuation">:</span> <span class="token string">&quot;10&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><blockquote><p>端口映射，不能写80映射。不知道什么原因？？？</p></blockquote> <h4 id="启动容器"><a href="#启动容器" class="header-anchor">#</a> 启动容器</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker-compose</span> up -d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="验证"><a href="#验证" class="header-anchor">#</a> 验证</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#日志查看，启动要很久</span>
+<span class="token function">docker-compose</span> logs -f
+
+<span class="token comment">#web url</span>
+http://192.168.210.10:8929/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="登录"><a href="#登录" class="header-anchor">#</a> 登录</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#root初始化密码</span>
+<span class="token builtin class-name">cd</span> /root/soft/gitlab/config
+<span class="token function">vi</span> initial_root_password
+
+<span class="token comment">#改成新密码</span>
+root/djb%741280
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="构建-maven"><a href="#构建-maven" class="header-anchor">#</a> 构建-maven</h3> <blockquote><p>本地（非docker）安装,为jenkins使用,环境可不配置。</p></blockquote> <h4 id="下载"><a href="#下载" class="header-anchor">#</a> 下载</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="解压"><a href="#解压" class="header-anchor">#</a> 解压</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">tar</span> -xvf apache-maven-3.8.5-bin.tar.gz
+<span class="token function">mv</span> apache-maven-3.8.5 maven
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="环境配置"><a href="#环境配置" class="header-anchor">#</a> 环境配置</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#vi .bash_profile</span>
+<span class="token assign-left variable">MAVEN_HOME</span><span class="token operator">=</span>/root/soft/maven
+<span class="token builtin class-name">export</span> MAVEN_HOME
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token variable">${<span class="token environment constant">PATH</span>}</span><span class="token builtin class-name">:</span><span class="token variable">${MAVEN_HOME}</span>/bin
+
+<span class="token comment">#生效</span>
+<span class="token builtin class-name">source</span> .bash_profile 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="测试"><a href="#测试" class="header-anchor">#</a> 测试</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>mvn -v
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="私服仓库"><a href="#私服仓库" class="header-anchor">#</a> 私服仓库</h4> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>cd /root/soft/maven/conf
+vi settings.xml
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mirror</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">&gt;</span></span>nexus-aliyun<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mirrorOf</span><span class="token punctuation">&gt;</span></span>central<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mirrorOf</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>Nexus aliyun<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url</span><span class="token punctuation">&gt;</span></span>http://maven.aliyun.com/nexus/content/groups/public<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mirror</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="jdk-版本"><a href="#jdk-版本" class="header-anchor">#</a> JDK 版本</h4> <p>Maven默认 JDK 版本是 1.5,改成 JDK 1.8 版本</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>cd /root/soft/maven/conf
+vi settings.xml
+
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>profile</span><span class="token punctuation">&gt;</span></span>
+	  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">&gt;</span></span>jdk-1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">&gt;</span></span>
+	  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activation</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activeByDefault</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activeByDefault</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>jdk</span><span class="token punctuation">&gt;</span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>jdk</span><span class="token punctuation">&gt;</span></span>
+	  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activation</span><span class="token punctuation">&gt;</span></span>
+	  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>properties</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>maven.compiler.source</span><span class="token punctuation">&gt;</span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>maven.compiler.source</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>maven.compiler.target</span><span class="token punctuation">&gt;</span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>maven.compiler.target</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>maven.compiler.compilerVersion</span><span class="token punctuation">&gt;</span></span>1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>maven.compiler.compilerVersion</span><span class="token punctuation">&gt;</span></span>
+	  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>properties</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>profile</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activeProfiles</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activeProfile</span><span class="token punctuation">&gt;</span></span>jdk-1.8<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activeProfile</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activeProfiles</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="java开发包-jdk"><a href="#java开发包-jdk" class="header-anchor">#</a> java开发包-jdk</h3> <blockquote><p>本地（非docker）安装,为jenkins使用,环境可不配置。</p></blockquote> <h4 id="下载-2"><a href="#下载-2" class="header-anchor">#</a> 下载</h4> <p>官网下载 https://www.oracle.com/java/technologies/downloads/</p> <h4 id="解压-2"><a href="#解压-2" class="header-anchor">#</a> 解压</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">tar</span> -xvf jdk-8u333-linux-x64.tar.gz
+<span class="token function">mv</span> jdk1.8.0_333 jdk
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="环境设置"><a href="#环境设置" class="header-anchor">#</a> 环境设置</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#vi .bash_profile</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">JAVA_HOME</span><span class="token operator">=</span>/root/soft/jdk
+<span class="token assign-left variable">CLASSPATH</span><span class="token operator">=</span>.:<span class="token variable">${JAVA_HOME}</span>/jre/lib/rt.jar:<span class="token variable">${JAVA_HOME}</span>/lib/dt.jar:<span class="token variable">${JAVA_HOME}</span>/lib/tools.jar
+
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span><span class="token builtin class-name">:</span><span class="token variable">${JAVA_HOME}</span>/bin
+
+<span class="token comment">#生效</span>
+<span class="token builtin class-name">source</span> .bash_profile
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="持续集成工具-jenkins"><a href="#持续集成工具-jenkins" class="header-anchor">#</a> 持续集成工具-jenkins</h3> <h4 id="安装镜像"><a href="#安装镜像" class="header-anchor">#</a> 安装镜像</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> pull jenkins/jenkins:2.332.3-lts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="编写docker-compose-yml文件-2"><a href="#编写docker-compose-yml文件-2" class="header-anchor">#</a> 编写docker-compose.yml文件</h4> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code>cd /root/soft/dockerfile/jenkins
+touch docker<span class="token punctuation">-</span>compose.yml
+
+<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3'</span>   <span class="token comment"># 定义版本，不指定默认为版本 1，新版本功能更多</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>      <span class="token comment"># 容器</span>
+  <span class="token key atrule">jenkins</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> <span class="token string">'jenkins/jenkins:2.332.3-lts'</span>    <span class="token comment"># 镜像</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jenkins         <span class="token comment"># 容器名称</span>
+    <span class="token key atrule">privileged</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 解决权限问题</span>
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always <span class="token comment"># 同 --restart 参数</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>  <span class="token comment"># 端口映射，同 -p 参数，本地端口:容器端口</span>
+      <span class="token punctuation">-</span> <span class="token string">'8099:8080'</span>
+      <span class="token punctuation">-</span> <span class="token string">'50000:50000'</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 数据卷,本地文件夹:容器文件夹</span>
+      <span class="token punctuation">-</span> <span class="token string">'/root/soft/jenkins:/var/jenkins_home'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="启动容器-2"><a href="#启动容器-2" class="header-anchor">#</a> 启动容器</h4> <blockquote><p>映射目录的写权限</p> <p>Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/
+<span class="token function">chmod</span> <span class="token number">777</span> -R jenkins/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></blockquote> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker-compose</span> up -d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="验证-2"><a href="#验证-2" class="header-anchor">#</a> 验证</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#日志查看</span>
+<span class="token function">docker-compose</span> logs -f
+
+<span class="token comment">#url</span>
+http://192.168.210.10:8099/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="登录-2"><a href="#登录-2" class="header-anchor">#</a> 登录</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#root初始化密码，修改成可用密码</span>
+<span class="token builtin class-name">cd</span> /root/soft/jenkins/secrets
+<span class="token function">cat</span> initialAdminPassword
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="选择插件来安装"><a href="#选择插件来安装" class="header-anchor">#</a> 选择插件来安装</h4> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429135725.png" alt=""></p> <p>按照默认选择，确定安装</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429135942.png" alt=""></p> <p>创建用户 dongjb/dongjb</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429144249.png" alt=""></p> <p>选择安装组件</p> <p>Manage jenkins -&gt; manage plugins</p> <p>Git Parameter</p> <p>Publish Over SSH</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429145145.png" alt=""></p> <h4 id="移动jdk-maven到jenkins的映射目录"><a href="#移动jdk-maven到jenkins的映射目录" class="header-anchor">#</a> 移动jdk，maven到jenkins的映射目录</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/jenkins
+<span class="token function">mv</span> /root/soft/jdk/ ./
+<span class="token function">mv</span> /root/soft/maven/ ./
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="全局配置"><a href="#全局配置" class="header-anchor">#</a> 全局配置</h4> <ol><li><p>jdk配置</p> <p>配置jdk路径，用于jenkins调用</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>jdk8
+/var/jenkins_home/jdk
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429154945.png" alt=""></p></li> <li><p>maven配置</p> <p>配置maven的路径，用于jenkins调用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>maven
+/var/jenkins_home/maven
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501173306.png" alt=""></p></li></ol> <h4 id="系统配置"><a href="#系统配置" class="header-anchor">#</a> 系统配置</h4> <ol><li><p>Publish over SSH</p> <p>配置ssh服务，用于文件传输，本例传输到本地的目录</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>test
+192.168.210.10
+root
+/root/soft/ssh
+dongjb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429160104.png" alt=""></p></li></ol> <h3 id="ci实例"><a href="#ci实例" class="header-anchor">#</a> CI实例</h3> <h4 id="idea项目"><a href="#idea项目" class="header-anchor">#</a> IDEA项目</h4> <ol><li>新建项目</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429185357.png" alt=""></p> <ol start="2"><li><p>启动项目</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429185705.png" alt=""></p></li> <li><p>测试结果</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429185836.png" alt=""></p></li></ol> <h4 id="gitlab代码托管"><a href="#gitlab代码托管" class="header-anchor">#</a> gitlab代码托管</h4> <ol><li><p>新建项目</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429190117.png" alt=""></p></li> <li><p>不要选择readme</p></li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501174748.png" alt=""></p> <ol start="3"><li>空的项目</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501174903.png" alt=""></p> <h4 id="项目版本控制"><a href="#项目版本控制" class="header-anchor">#</a> 项目版本控制</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /Users/mac/IdeaProjects/lean/devops
+
+<span class="token function">git</span> config --global user.name <span class="token string">&quot;Administrator&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;admin@example.com&quot;</span>
+
+<span class="token builtin class-name">cd</span> /Users/mac/IdeaProjects/lean/devops
+<span class="token function">git</span> init --initial-branch<span class="token operator">=</span>main
+<span class="token function">git</span> remote <span class="token function">add</span> origin http://192.168.210.10:8929/gitlab-instance-571ecef5/devops.git
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">&quot;Initial commit&quot;</span>
+<span class="token function">git</span> push -u origin main
+
+<span class="token comment">#root/djb%741280</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h4 id="jenkins任务"><a href="#jenkins任务" class="header-anchor">#</a> jenkins任务</h4> <h5 id="新建任务"><a href="#新建任务" class="header-anchor">#</a> 新建任务</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>testdevops
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429210906.png" alt=""></p> <h5 id="源码配置"><a href="#源码配置" class="header-anchor">#</a> 源码配置</h5> <ol><li><p>配置填写，代码库url，2.身份校验，3.分支，确定提交</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>http://192.168.210.10:8929/gitlab-instance-571ecef5/devops.git
+root/djb%741280
+*/main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429231154.png" alt=""></p></li> <li><p>根据gitlab服务器配置生成凭证，root，djb%741280</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429231451.png" alt=""></p></li> <li><p>执行任务并查看结果</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#jenkins映射目录中查看代码</span>
+<span class="token builtin class-name">cd</span> /root/soft/jenkins/workspace
+<span class="token comment">#是否存在项目代码</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429231918.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220429232047.png" alt=""></p></li></ol> <h5 id="构建配置"><a href="#构建配置" class="header-anchor">#</a> 构建配置</h5> <ol><li><p>填写maven配置，填写maven版本，maven命令：clean package -DskipTest</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#调用顶层maven目标
+maven
+clean package -DskipTest
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h5 id=""><a href="#" class="header-anchor">#</a> <img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430082748.png" alt=""></h5></li> <li><p>执行任务并查看结果</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#jenkins映射目录中查看代码
+cd /root/soft/jenkins/workspace
+#是否存在target目录中的jar包
+Ssh配置
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li></ol> <h5 id="构建后操作ssh配置"><a href="#构建后操作ssh配置" class="header-anchor">#</a> 构建后操作SSH配置</h5> <ol><li><p>填写配置，选择send build artifacts over SSH,然后选择ssh服务(全局配置): test，填写 <strong>Source files</strong>：target/*.jar</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430091204.png" alt=""></p></li> <li><p>执行任务并查看结果</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#查看ssh上传目录(系统配置中设置)是否有上传文件</span>
+<span class="token builtin class-name">cd</span> /root/soft/ssh
+target/devops-0.0.1-SNAPSHOT.jar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li></ol> <h5 id="docker配置"><a href="#docker配置" class="header-anchor">#</a> Docker配置</h5> <ol><li><p>项目代码中增加Dockerfile,docker-compose.yml</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430095940.png" alt=""></p></li> <li><p>Docker配置</p> <p><strong>Source files</strong>:<code>docker/*</code></p> <p><strong>Exec command</strong>:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd /root/soft/jenkins/workspace/testdevops/docker
+mv ../target/*.jar ./
+docker-compose down
+docker-compose up -d --build
+docker image prune -f
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501193807.png" alt=""></p></li> <li><p>执行任务并查看结果</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430102829.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430102919.png" alt=""></p></li></ol> <h5 id="参数构建配置"><a href="#参数构建配置" class="header-anchor">#</a> 参数构建配置</h5> <ol><li><p>参数配置，任务配置-&gt;参数化构建过程-&gt;git参数-&gt;填写<code>名称</code>，<code>描述</code>。参数类型选择<code>标签</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>tag
+标签
+origin/main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430123537.png" alt=""></p> <p>构建<code>maven构建</code>之前增加构建步骤<code>执行shell</code>，shell命令内容：<code>git checkout $tag</code></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220506144018.png" alt=""></p></li> <li><p>gitlab标签创建</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430125001.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430125139.png" alt=""></p> <p>修改代码上传后，在gitlab再新建一个tag</p></li> <li><p>执行任务并查看结果</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430130708.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430131617.png" alt=""></p> <p>换个tag重新构建，再查看结果，最终实现参数化动态构建</p></li></ol> <h3 id="sonarqube代码质量"><a href="#sonarqube代码质量" class="header-anchor">#</a> Sonarqube代码质量</h3> <h4 id="安装-2"><a href="#安装-2" class="header-anchor">#</a> 安装</h4> <ol><li><p>镜像拉取</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#要数据库支持postgres</span>
+<span class="token function">docker</span> pull postgres
+<span class="token function">docker</span> pull sonarqube:8.9.8-community
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>doker-compose.yml</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/dockerfile/sonarqube
+<span class="token function">touch</span> docker-compose.yml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3.1'</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> db
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 5432<span class="token punctuation">:</span><span class="token number">5432</span>
+    <span class="token key atrule">networks</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> sonarnet
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">POSTGRES_USER</span><span class="token punctuation">:</span> sonar
+      <span class="token key atrule">POSTGRES_PASSWORD</span><span class="token punctuation">:</span> sonar
+  <span class="token key atrule">sonarqube</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> sonarqube<span class="token punctuation">:</span>8.9.8<span class="token punctuation">-</span>community
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> sonarqube
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">depends_on</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> db
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> /root/soft/sonarqube/extensions<span class="token punctuation">:</span>/opt/sonarqube/extensions
+      <span class="token punctuation">-</span> /root/soft/sonarqube/logs<span class="token punctuation">:</span>/opt/sonarqube/logs
+      <span class="token punctuation">-</span> /root/soft/sonarqube/data<span class="token punctuation">:</span>/opt/sonarqube/data
+      <span class="token punctuation">-</span> /root/soft/sonarqube/conf<span class="token punctuation">:</span>/opt/sonarqube/conf
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 9000<span class="token punctuation">:</span><span class="token number">9000</span>
+    <span class="token key atrule">networks</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> sonarnet
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">SONAR_JDBC_URL</span><span class="token punctuation">:</span> jdbc<span class="token punctuation">:</span>postgresql<span class="token punctuation">:</span>//db<span class="token punctuation">:</span>5432/sonar
+      <span class="token key atrule">SONAR_JDBC_USERNAME</span><span class="token punctuation">:</span> sonar
+      <span class="token key atrule">SONAR_JDBC_PASSWORD</span><span class="token punctuation">:</span> sonar
+<span class="token key atrule">networks</span><span class="token punctuation">:</span>
+  <span class="token key atrule">sonarnet</span><span class="token punctuation">:</span>
+    <span class="token key atrule">driver</span><span class="token punctuation">:</span> bridge
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div></li> <li><p>启动验证</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#修改系统参数`虚拟内存`</span>
+<span class="token comment">#bootstrap check failure [1] of [1]: max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]</span>
+
+<span class="token function">vi</span> /etc/sysctl.conf
+vm.max_map_count<span class="token operator">=</span><span class="token number">462144</span>
+
+sysctl -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>启动</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker-compose up -d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>验证</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>http://192.168.210.10:9000/
+<span class="token comment">#默认</span>
+admin/admin
+<span class="token comment">#修改</span>
+admin/dongjb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></li> <li><p>中文环境插件</p> <p>Administration-&gt; Marketplace， 安装后要重启系统</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430203103.png" alt=""></p></li></ol> <h4 id="maven-方式运行"><a href="#maven-方式运行" class="header-anchor">#</a> Maven 方式运行</h4> <ol><li><p>Maven setting.xml文件中添加sonarqube设置</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code>			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>profile</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>id</span><span class="token punctuation">&gt;</span></span>sonar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>id</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activation</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>activeByDefault</span><span class="token punctuation">&gt;</span></span>true<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activeByDefault</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>activation</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>properties</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sonar.login</span><span class="token punctuation">&gt;</span></span>admin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sonar.login</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sonar.password</span><span class="token punctuation">&gt;</span></span>dongjb<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sonar.password</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>sonar.host.url</span><span class="token punctuation">&gt;</span></span>http://192.168.210.10:9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>sonar.host.url</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>properties</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>profile</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></li> <li><p>运行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#项目目录下</span>
+mvn sonar:sonar
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>日志结果</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430210014.png" alt=""></p></li> <li><p>控制台</p> <p><code>http://192.168.210.10:9000/</code></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430210209.png" alt=""></p></li></ol> <h4 id="sonar-scanner"><a href="#sonar-scanner" class="header-anchor">#</a> sonar-scanner</h4> <ol><li><p>安装</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.7.0.2747-linux.zip
+yum <span class="token function">install</span> <span class="token function">unzip</span>
+<span class="token function">unzip</span> sonar-scanner-cli-4.7.0.2747-linux.zip
+
+<span class="token comment">#转存到jenkins的home下</span>
+<span class="token builtin class-name">cd</span> /root/soft/jenkins
+<span class="token function">mv</span> /root/sonar-scanner-4.7.0.2747-linux/ sonar-scanner
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div></li> <li><p>修改配置</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/jenkins/sonar-scanner/conf
+<span class="token function">vi</span> sonar-scanner.properties
+ip要修改成主机ip，编码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430221932.png" alt=""></p></li> <li><p>获取token</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430223127.png" alt=""></p></li> <li><p>执行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#进入项目目录</span>
+<span class="token builtin class-name">cd</span> /root/soft/jenkins/workspace/testdevops
+<span class="token comment">#执行</span>
+/root/soft/jenkins/sonar-scanner/bin/sonar-scanner -Dsonar.sources<span class="token operator">=</span>. -Dsonar.projectname<span class="token operator">=</span>linux-test -Dsonar.login<span class="token operator">=</span>904c58912f3f3e0652529fb58fbb22affe180130 -Dsonar.projectKey<span class="token operator">=</span>linux-test -Dsonar.java.binaries<span class="token operator">=</span>./target
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li><p>运行结果</p> <p>查看日志</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220430230752.png" alt=""></p> <p>查看控制台</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501212255.png" alt=""></p></li></ol> <h4 id="sonarqube整合到jenkins"><a href="#sonarqube整合到jenkins" class="header-anchor">#</a> sonarqube整合到jenkins</h4> <ol><li><p>jenkins中安装sonarqube插件</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501102948.png" alt=""></p> <p>重新启动jenkins<code>http://192.168.210.10:8080/restart</code></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501103509.png" alt=""></p></li> <li><p>jenkins中配置sonar</p> <p>系统管理-&gt;系统配置 配置SonarQube servers， 输入服务名称：sonarqube，url：http://192.168.210.10:9000/</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501104305.png" alt=""></p> <p>凭证，类型采用secret text方式。secret是在sonarqube中生成的token</p> <blockquote><p>当sonarqube重建的话，这个令牌会失效。需要重新获取</p> <p>还是改成，用户名/密码方式好点</p></blockquote> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501104733.png" alt=""></p></li> <li><p>系统管理-&gt;全局配置 配置SonarQube Scanner，输入名称：sonar-scanner,输入home：/var/jenkins_home/sonar-scanner</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501110019.png" alt=""></p></li> <li><p>jenkins任务，修改配置,<code>增加构建步骤</code>-&gt;execute sonarqube scanner</p> <p>如果之前有手工运行scanner ，需删除项目下 .scannerwork目录</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>选择jdk：jdk8
+#分析参数：
+sonar.projectname=${JOB_NAME
+sonar.projectKey=${JOB_NAME}
+sonar.sources=./
+sonar.java.binaries=target
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501110841.png" alt=""></p></li> <li><p>运行jenkins任务，并查看sonar结果</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501111819.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220501222941.png" alt=""></p></li></ol> <h3 id="habor镜像仓库"><a href="#habor镜像仓库" class="header-anchor">#</a> habor镜像仓库</h3> <h4 id="安装-3"><a href="#安装-3" class="header-anchor">#</a> 安装</h4> <h5 id="下载-3"><a href="#下载-3" class="header-anchor">#</a> 下载</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>wget https://github.com/goharbor/harbor/releases/download/v2.5.0/harbor-offline-installer-v2.5.0.tgz
+
+tar -zxvf harbor-offline-installer-v2.5.0.tgz
+mv harbor /root/soft/dockerfile/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h5 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h5> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#由模板生成配置文件</span>
+<span class="token builtin class-name">cd</span> /root/soft/dockerfile/harbor
+<span class="token function">cp</span> harbor.yml.tmpl harbor.yml
+
+<span class="token comment">#vi harbor.yml</span>
+修改hostname: <span class="token number">192.168</span>.210.10
+端口为：80
+注释掉https相关配置
+harbor_admin_password: Harbor12345
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h5 id="运行"><a href="#运行" class="header-anchor">#</a> 运行</h5> <p>脚本，安装镜像，运行容器。需要docker环境</p> <p><code>./install.sh</code></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502100340.png" alt=""></p> <h5 id="验证-3"><a href="#验证-3" class="header-anchor">#</a> 验证</h5> <p>http://192.168.210.10:80</p> <p>admin/Harbor12345</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502101407.png" alt=""></p> <h5 id="项目启停"><a href="#项目启停" class="header-anchor">#</a> 项目启停</h5> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#配置，安装后生成配置文件</span>
+<span class="token function">vi</span> /root/soft/dockerfile/harbor/docker-compose.yml
+
+<span class="token comment">#运行</span>
+<span class="token function">docker-compose</span> up -d
+<span class="token comment">#删除</span>
+<span class="token function">docker-compose</span> down
+<span class="token comment">#重启</span>
+<span class="token function">docker-compose</span> restart
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="基本操作"><a href="#基本操作" class="header-anchor">#</a> 基本操作</h4> <h5 id="新建项目"><a href="#新建项目" class="header-anchor">#</a> 新建项目</h5> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502124426.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502124523.png" alt=""></p> <h5 id="docker配置-2"><a href="#docker配置-2" class="header-anchor">#</a> docker配置</h5> <p>设置私有仓库地址</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code>vi /etc/docker/daemon.json
+<span class="token punctuation">{</span>
+ <span class="token property">&quot;insecure-registries&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;192.168.210.10:80&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+#修改配置后要重启docker服务
+systemctl restart docker  #重启docker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h5 id="修改镜像名称"><a href="#修改镜像名称" class="header-anchor">#</a> 修改镜像名称</h5> <blockquote><p>需要推送到仓库的镜像标准格式，通过tag方式重新给镜像取别名</p> <p>habor地址/仓库名称/镜像名：版本</p></blockquote> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> tag c883a733c469 <span class="token number">192.168</span>.210.10:80/repo/mytest:v2.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="推送镜像"><a href="#推送镜像" class="header-anchor">#</a> 推送镜像</h5> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#先登录</span>
+<span class="token function">docker</span> login -u admin -p Harbor12345 <span class="token number">192.168</span>.210.10:80
+<span class="token comment">#推</span>
+<span class="token function">docker</span> push <span class="token number">192.168</span>.210.10:80/repo/mytest:v2.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>推送成功</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502141649.png" alt=""></p> <h5 id="拉取镜像"><a href="#拉取镜像" class="header-anchor">#</a> 拉取镜像</h5> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#先登录,public仓库不需登录</span>
+<span class="token function">docker</span> login -u admin -p Harbor12345 <span class="token number">192.168</span>.210.10:80
+<span class="token comment">#拉</span>
+<span class="token function">docker</span> pull <span class="token number">192.168</span>.210.10:80/repo/mytest:v2.0.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="jenkins内运行docker"><a href="#jenkins内运行docker" class="header-anchor">#</a> jenkins内运行docker</h4> <ol><li>jenkins容器内安装daocker，比较困难，依赖的比较多。</li> <li>使用jenkins宿主机上的docker</li></ol> <p>为了实现方案2的目标需要如下修改</p> <h5 id="docker核心文件docker-sock"><a href="#docker核心文件docker-sock" class="header-anchor">#</a> docker核心文件docker.sock</h5> <ol><li><p>修改权限所属组</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /var/run
+<span class="token comment">#有root docker 改成 root root</span>
+<span class="token function">chown</span> root:root docker.sock
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>修改文件的权限,让其他用户也有读和写的权限</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>chmod o+rw docker.sock
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <h5 id="修改docker-compose-yml"><a href="#修改docker-compose-yml" class="header-anchor">#</a> 修改docker-compose.yml</h5> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code>cd /root/soft/dockerfile/jenkins
+vi docker<span class="token punctuation">-</span>compose.yml
+<span class="token comment">#更改数据卷</span>
+
+<span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3'</span>   <span class="token comment"># 定义版本，不指定默认为版本 1，新版本功能更多</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>      <span class="token comment"># 容器</span>
+  <span class="token key atrule">jenkins</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> <span class="token string">'docker.io/jenkins/jenkins:2.332.3-lts'</span>    <span class="token comment"># 镜像</span>
+    <span class="token key atrule">container_name</span><span class="token punctuation">:</span> jenkins         <span class="token comment"># 容器名称</span>
+    <span class="token key atrule">privileged</span><span class="token punctuation">:</span> <span class="token boolean important">true</span> <span class="token comment"># 解决权限问题</span>
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always <span class="token comment"># 同 --restart 参数</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>  <span class="token comment"># 端口映射，同 -p 参数，本地端口:容器端口</span>
+      <span class="token punctuation">-</span> <span class="token string">'8099:8080'</span>
+      <span class="token punctuation">-</span> <span class="token string">'50000:50000'</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span> <span class="token comment"># 数据卷,本地文件夹:容器文件夹</span>
+      <span class="token punctuation">-</span> <span class="token string">'/root/soft/jenkins:/var/jenkins_home'</span>
+      <span class="token punctuation">-</span> <span class="token string">'/var/run/docker.sock:/var/run/docker.sock'</span>
+      <span class="token punctuation">-</span> <span class="token string">'/usr/bin/docker:/usr/bin/docker'</span>
+      <span class="token punctuation">-</span> <span class="token string">'/etc/docker/daemon.json:/etc/docker/daemon.json'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>重新构建容器: <code>docker-compose up -d</code></p> <h5 id="验证容器内使用docker"><a href="#验证容器内使用docker" class="header-anchor">#</a> 验证容器内使用docker</h5> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it 4a034ac79220 <span class="token function">bash</span>
+<span class="token function">docker</span> -v
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="habor整合到jenkins"><a href="#habor整合到jenkins" class="header-anchor">#</a> habor整合到jenkins</h4> <h5 id="修改任务配置"><a href="#修改任务配置" class="header-anchor">#</a> 修改任务配置</h5> <ol><li>删除原有的<code>构建后操作</code></li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502171029.png" alt=""></p> <ol start="2"><li><p>增加构建步骤，在代码检查后，选择<code>执行shell</code>。用于制作镜像</p> <p>命令内容</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mv</span> target/*.jar docker/
+<span class="token function">docker</span> build -t mytest:<span class="token variable">$tag</span> docker/
+<span class="token function">docker</span> login -u admin -p Harbor12345 <span class="token number">192.168</span>.210.10:80
+<span class="token function">docker</span> tag mytest:<span class="token variable">$tag</span> <span class="token number">192.168</span>.210.10:80/repo/mytest:<span class="token variable">$tag</span>
+<span class="token function">docker</span> push <span class="token number">192.168</span>.210.10:80/repo/mytest:<span class="token variable">$tag</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502173824.png" alt=""></p></li></ol> <h5 id="构建验证"><a href="#构建验证" class="header-anchor">#</a> 构建验证</h5> <ol><li><p>修改代码上传，新建tag v4.0.0。</p> <p>代码中的Dockerfile是需要的，docker-compose.yml不需要了。</p></li> <li><p>Harbor中查看镜像</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502174043.png" alt=""></p></li></ol> <h4 id="通知构建"><a href="#通知构建" class="header-anchor">#</a> 通知构建</h4> <h5 id="部署脚本"><a href="#部署脚本" class="header-anchor">#</a> 部署脚本</h5> <ol><li>告知服务器拉取哪个镜像</li> <li>判断当前服务器是否运行容器，需要删除</li> <li>判断当前服务器是否存在此镜像，需要删除</li> <li>当前服务器拉取harbor上的镜像</li> <li>把拉取下的镜像运行成容器</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /root/soft/dockerfile/shell
+<span class="token function">vi</span> deploy.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token assign-left variable">harbor_addr</span><span class="token operator">=</span><span class="token variable">$1</span>
+<span class="token assign-left variable">harbor_repo</span><span class="token operator">=</span><span class="token variable">$2</span>
+<span class="token assign-left variable">project</span><span class="token operator">=</span><span class="token variable">$3</span>
+<span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token variable">$4</span>
+<span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token variable">$5</span>
+
+<span class="token assign-left variable">imageName</span><span class="token operator">=</span><span class="token variable">$harbor_addr</span>/<span class="token variable">$harbor_repo</span>/<span class="token variable">$project</span><span class="token builtin class-name">:</span><span class="token variable">$version</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$imageName</span>
+
+<span class="token assign-left variable">containerId</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">docker</span> <span class="token function">ps</span> -a <span class="token operator">|</span> <span class="token function">grep</span> $<span class="token punctuation">{</span>project<span class="token punctuation">}</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $1}'</span><span class="token variable">`</span></span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$containerId</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$containerId</span>&quot;</span> <span class="token operator">!=</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">]</span> <span class="token punctuation">;</span> <span class="token keyword">then</span>
+	<span class="token function">docker</span> stop <span class="token variable">$containerId</span>
+	<span class="token function">docker</span> <span class="token function">rm</span> <span class="token variable">$containerId</span>
+<span class="token keyword">fi</span>
+
+<span class="token assign-left variable">tag</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">docker</span> images <span class="token operator">|</span> <span class="token function">grep</span> $<span class="token punctuation">{</span>project<span class="token punctuation">}</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">'{print $2}'</span><span class="token variable">`</span></span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$tag</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">[</span><span class="token punctuation">[</span> <span class="token string">&quot;<span class="token variable">$tag</span>&quot;</span> <span class="token operator">=~</span> <span class="token string">&quot;<span class="token variable">$version</span>&quot;</span> <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">;</span> <span class="token keyword">then</span>
+	<span class="token function">docker</span> rmi -f <span class="token variable">$imageName</span>
+<span class="token keyword">fi</span>
+
+<span class="token function">docker</span> login -u admin -p Harbor12345 <span class="token variable">$harbor_addr</span>
+<span class="token function">docker</span> pull <span class="token variable">$imageName</span>
+
+<span class="token function">docker</span> run -d -p <span class="token variable">$port</span><span class="token builtin class-name">:</span><span class="token variable">$port</span> --name <span class="token variable">$project</span> <span class="token variable">$imageName</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;SUCCESS&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>cd /root/soft/dockerfile/shell
+#赋权
+chmod a+x deploy.sh
+#运行
+./deploy.sh 192.168.210.10:80 repo mytest v4.0.0 8081
+#拷贝到/usr/bin
+cp deploy.sh /usr/bin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h5 id="jenkins-调用脚本"><a href="#jenkins-调用脚本" class="header-anchor">#</a> Jenkins 调用脚本</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>deploy.sh 192.168.210.10:80 repo mytest $tag $port
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220502224313.png" alt=""></p> <h3 id="流水线"><a href="#流水线" class="header-anchor">#</a> 流水线</h3> <h4 id="新建项目-2"><a href="#新建项目-2" class="header-anchor">#</a> 新建项目</h4> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503085152.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503085338.png" alt=""></p> <h4 id="项目配置"><a href="#项目配置" class="header-anchor">#</a> 项目配置</h4> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503085556.png" alt=""></p> <h5 id="流水线脚本编写"><a href="#流水线脚本编写" class="header-anchor">#</a> 流水线脚本编写</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>//所有脚本命令都放到pipeline中
+pipeline {
+		//指定任务在哪个jenkins集群节点中执行
+    agent any
+    
+    //声明全局变量，方便后面使用
+    environment {
+    	key = 'value'
+    }
+
+    stages {
+        stage('拉取git仓库代码') {
+            steps {
+                echo '拉取git仓库代码 - SUCCESS'
+            }
+        }
+        stage('通过MAVEN构建项目') {
+            steps {
+                echo '通过MAVEN构建项目 - SUCCESS'
+            }
+        }
+        stage('通过SONARQUBE做代码质量检测') {
+            steps {
+                echo '通过SONARQUBE做代码质量检测 - SUCCESS'
+            }
+        }
+        stage('通过docker制作自定义镜像') {
+            steps {
+                echo '通过docker制作自定义镜像 - SUCCESS'
+            }
+        }
+        stage('将自定义镜像推送到harbor仓库') {
+            steps {
+                echo '将自定义镜像推送到harbor仓库 - SUCCESS'
+            }
+        }
+        stage('通过publish over ssh 通知目标服务器') {
+            steps {
+                echo '通过publish over ssh 通知目标服务器 - SUCCESS'
+            }
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><p>项目配置中，修改脚本，然后执行。</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503094845.png" alt=""></p> <h5 id="流水线脚本git托管"><a href="#流水线脚本git托管" class="header-anchor">#</a> 流水线脚本git托管</h5> <ol><li>在项目中新建文件，名称必须为：Jenkinsfile，提交代码</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503101559.png" alt=""></p> <ol start="2"><li>修改任务中，流水线配置</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>pipeline script from scm
+git
+http://192.168.210.10:8929/gitlab-instance-571ecef5/devops.git
+root
+djb%741280
+*/main
+Jenkinsfile
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503102700.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503102828.png" alt=""></p> <h5 id="拉取git仓库代码"><a href="#拉取git仓库代码" class="header-anchor">#</a> 拉取git仓库代码</h5> <ol><li>填写git相关配置，另外在<code>参数化构建过程</code> 增加tag参数</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503104149.png" alt=""></p> <ol start="2"><li>点击<code>生成流水线脚本</code></li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503104257.png" alt=""></p> <ol start="3"><li>把生成的脚本放到jenkinsfile文件中</li></ol> <blockquote><p>*/main 改成 ${tag}</p></blockquote> <div class="language-json line-numbers-mode"><pre class="language-json"><code>        stage('拉取git仓库代码') <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                checkout(<span class="token punctuation">[</span>$class<span class="token operator">:</span> 'GitSCM'<span class="token punctuation">,</span> branches<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>name<span class="token operator">:</span> '$<span class="token punctuation">{</span>tag<span class="token punctuation">}</span>'<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> userRemoteConfigs<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>credentialsId<span class="token operator">:</span> 'e77dae76-970f<span class="token number">-4849</span>-ae62-2b4b0fa74ccf'<span class="token punctuation">,</span> url<span class="token operator">:</span> 'http<span class="token operator">:</span><span class="token comment">//192.168.210.10:8929/gitlab-instance-647f3442/devops.git']]])</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="通过maven构建项目"><a href="#通过maven构建项目" class="header-anchor">#</a> 通过MAVEN构建项目</h5> <ol><li>填写配置</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>/var/jenkins_home/maven/bin/mvn clean package -DskipTests
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503113648.png" alt=""></p> <ol><li>把生成的脚本放到jenkinsfile文件中</li></ol> <div class="language-json line-numbers-mode"><pre class="language-json"><code>        stage('通过MAVEN构建项目') <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                sh '/var/jenkins_home/maven/bin/mvn clean package -DskipTests'
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="通过sonarqube做代码质量检测"><a href="#通过sonarqube做代码质量检测" class="header-anchor">#</a> 通过SONARQUBE做代码质量检测</h5> <ol><li>填写配置</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>/var/jenkins_home/sonar-scanner/bin/sonar-scanner  -Dsonar.sources<span class="token operator">=</span>./ -Dsonar.projectname<span class="token operator">=</span><span class="token variable">${JOB_NAME}</span> -Dsonar.login<span class="token operator">=</span> c8a95acfd8faf9d0217539dab84fce09c1c50df3 -Dsonar.projectKey<span class="token operator">=</span><span class="token variable">${JOB_NAME}</span>  -Dsonar.java.binaries<span class="token operator">=</span>./target
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503115159.png" alt=""></p> <ol start="2"><li>把生成的脚本放到jenkinsfile文件中</li></ol> <div class="language-json line-numbers-mode"><pre class="language-json"><code>        stage('通过SONARQUBE做代码质量检测') <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                sh '/var/jenkins_home/sonar-scanner/bin/sonar-scanner  -Dsonar.sources=./ -Dsonar.projectname=$<span class="token punctuation">{</span>JOB_NAME<span class="token punctuation">}</span> -Dsonar.login=c8a95acfd8faf9d0217539dab84fce09c1c50df3 -Dsonar.projectKey=$<span class="token punctuation">{</span>JOB_NAME<span class="token punctuation">}</span>  -Dsonar.java.binaries=./target'
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="通过docker制作自定义镜像"><a href="#通过docker制作自定义镜像" class="header-anchor">#</a> 通过docker制作自定义镜像</h5> <ol><li>2填写配置</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mv</span> ./target/*.jar ./docker/
+<span class="token function">docker</span> build -t <span class="token variable">${JOB_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">${tag}</span> ./docker/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503120832.png" alt=""></p> <p>把生成的脚本放到jenkinsfile文件中</p> <div class="language-json line-numbers-mode"><pre class="language-json"><code>        stage('通过docker制作自定义镜像') <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                sh '''mv ./target<span class="token comment">/*.jar ./docker/
+                docker build -t ${JOB_NAME}:${tag} ./docker/'''
+            }
+        }
+</span></code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="将自定义镜像推送到harbor仓库"><a href="#将自定义镜像推送到harbor仓库" class="header-anchor">#</a> 将自定义镜像推送到harbor仓库</h5> <p>填写配置</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">docker</span> login -u admin -p Harbor12345 <span class="token number">192.168</span>.210.10:80
+<span class="token function">docker</span> tag <span class="token variable">${JOB_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">$tag</span> <span class="token number">192.168</span>.210.10:80/repo/<span class="token variable">${JOB_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">$tag</span>
+<span class="token function">docker</span> push <span class="token number">192.168</span>.210.10:80/repo/<span class="token variable">${JOB_NAME}</span><span class="token builtin class-name">:</span><span class="token variable">$tag</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503122002.png" alt=""></p> <ol start="2"><li>把生成的脚本放到jenkinsfile文件中</li></ol> <div class="language-json line-numbers-mode"><pre class="language-json"><code>    environment <span class="token punctuation">{</span>
+    	harborUsername = 'admin'
+    	haborPassword = 'Harbor12345'
+    	haborAddress = '<span class="token number">192.168</span>.<span class="token number">210.10</span><span class="token operator">:</span><span class="token number">80</span>'
+    	haborRepo = 'repo'
+    <span class="token punctuation">}</span>
+
+        stage('将自定义镜像推送到harbor仓库') <span class="token punctuation">{</span>
+            steps <span class="token punctuation">{</span>
+                sh '''docker login -u $<span class="token punctuation">{</span>harborUsername<span class="token punctuation">}</span> -p $<span class="token punctuation">{</span>haborPassword<span class="token punctuation">}</span> $<span class="token punctuation">{</span>haborAddress<span class="token punctuation">}</span>
+                docker tag $<span class="token punctuation">{</span>JOB_NAME<span class="token punctuation">}</span><span class="token operator">:</span>$tag $<span class="token punctuation">{</span>haborAddress<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>haborRepo<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>JOB_NAME<span class="token punctuation">}</span><span class="token operator">:</span>$tag
+                docker push $<span class="token punctuation">{</span>haborAddress<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>haborRepo<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>JOB_NAME<span class="token punctuation">}</span><span class="token operator">:</span>$tag'''
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h5 id="通过publish-over-ssh-通知目标服务器"><a href="#通过publish-over-ssh-通知目标服务器" class="header-anchor">#</a> 通过publish over ssh 通知目标服务器</h5> <ol><li>填写配置</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>deploy.sh <span class="token variable">$haborAddress</span> <span class="token variable">$haborRepo</span> <span class="token variable">$JOB_NAME</span> <span class="token variable">$tag</span> <span class="token variable">$port</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503135343.png" alt=""></p> <ol start="2"><li>设置port参数</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503140210.png" alt=""></p> <ol start="3"><li>把生成的脚本放到jenkinsfile文件中</li></ol> <blockquote><p>&quot;deploy.sh $haborAddress $haborRepo $JOB_NAME $tag $port&quot;</p> <p>一定要双引号，不能用单引号</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>        stage('通过publish over ssh 通知目标服务器') {
+            steps {
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'test', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: &quot;deploy.sh $haborAddress $haborRepo $JOB_NAME $tag $port&quot;, execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+            }
+        }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h5 id="构建后钉钉通知消息"><a href="#构建后钉钉通知消息" class="header-anchor">#</a> 构建后钉钉通知消息</h5> <ol><li>钉钉应用</li></ol> <p>​	钉钉pc版中，创建群，并在群中设置机器人。并输出如下hook</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>https://oapi.dingtalk.com/robot/send?access_token<span class="token operator">=</span>18760ab227d9d7948cf949a7bbe58cd9faf9cf6818843d89010126f44027964b
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>jenkins中下载插件- DingTalk</li> <li>Jenkins系统管理-&gt;系统配置，配置钉钉</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>构建中断时 构建失败时 构建成功时 构建不稳定时
+jinkins-dingding
+jinkins-dingding
+https://oapi.dingtalk.com/robot/send?access_token=18760ab227d9d7948cf949a7bbe58cd9faf9cf6818843d89010126f44027964b
+部署
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503162755.png" alt=""></p> <ol start="3"><li>把生成的脚本放到jenkinsfile文件中</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    post {
+        success {
+            dingtalk(
+                robot: 'jinkins-dingding',
+                type: 'MARKDOWN',
+                title: &quot;success: ${JOB_NAME} &quot;,
+                text: [&quot;- 成功构建：${JOB_NAME}! \n - 版本：${tag} \n - 持续时间： ${currentBuild.durationString} &quot;]
+            )
+        }
+        failure {
+            dingtalk(
+                 robot: 'jinkins-dingding',
+                 type: 'MARKDOWN',
+                 title: &quot;failure: ${JOB_NAME} &quot;,
+                 text: [&quot;- 失败构建：${JOB_NAME}! \n - 版本：${tag} \n - 持续时间： ${currentBuild.durationString} &quot;]
+            )
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ol start="4"><li>验证消息</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220503162537.png" alt=""></p> <h3 id="kubernetes"><a href="#kubernetes" class="header-anchor">#</a> Kubernetes</h3> <p>官网： https://kubernetes.io/zh/</p> <h4 id="kuboard安装kubernetes"><a href="#kuboard安装kubernetes" class="header-anchor">#</a> Kuboard安装Kubernetes</h4> <p>官网： https://kuboard.cn/</p> <h5 id="选择版本"><a href="#选择版本" class="header-anchor">#</a> 选择版本</h5> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220504191425.png" alt=""></p> <h5 id="环境准备"><a href="#环境准备" class="header-anchor">#</a> 环境准备</h5> <ul><li>至少2台 <strong>2核4G</strong> 的服务器</li> <li><strong>Cent OS 7.6 / 7.7 / 7.8</strong></li></ul> <h5 id="检查-centos-hostname"><a href="#检查-centos-hostname" class="header-anchor">#</a> 检查 centos / hostname</h5> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 在 master 节点和 worker 节点都要执行</span>
+<span class="token function">cat</span> /etc/redhat-release
+
+<span class="token comment"># 此处 hostname 的输出将会是该机器在 Kubernetes 集群中的节点名字</span>
+<span class="token comment"># 不能使用 localhost 作为节点的名字</span>
+<span class="token function">hostname</span>
+
+<span class="token comment"># 请使用 lscpu 命令，核对 CPU 信息</span>
+<span class="token comment"># Architecture: x86_64    本安装文档不支持 arm 架构</span>
+<span class="token comment"># CPU(s):       2         CPU 内核数量不能低于 2</span>
+lscpu
+
+<span class="token comment">#网络不能太复杂</span>
+/etc/sysconfig/network-scripts/ifcfg-ens33
+systemctl restart network
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h5 id="修改-hostname"><a href="#修改-hostname" class="header-anchor">#</a> 修改 hostname</h5> <p>如果您需要修改 hostname，可执行如下指令：</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 修改 hostname</span>
+hostnamectl set-hostname k8smaster
+hostnamectl set-hostname k8sworker
+<span class="token comment"># 查看修改结果</span>
+hostnamectl status
+<span class="token comment"># 设置 hostname 解析</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;127.0.0.1   <span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span><span class="token variable">)</span></span>&quot;</span> <span class="token operator">&gt;&gt;</span> /etc/hosts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h5 id="安装docker及kubelet"><a href="#安装docker及kubelet" class="header-anchor">#</a> 安装docker及kubelet</h5> <p>两台机器都要执行</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">REGISTRY_MIRROR</span><span class="token operator">=</span>https://registry.cn-hangzhou.aliyuncs.com
+<span class="token function">curl</span> -sSL https://kuboard.cn/install-script/v1.19.x/install_kubelet.sh <span class="token operator">|</span> <span class="token function">sh</span> -s <span class="token number">1.19</span>.5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h5 id="初始化master节点"><a href="#初始化master节点" class="header-anchor">#</a> 初始化master节点</h5> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 只在 master 节点执行</span>
+<span class="token comment"># 替换 x.x.x.x 为 master 节点实际 IP（请使用内网 IP）</span>
+<span class="token comment"># export 命令只在当前 shell 会话中有效，开启新的 shell 窗口后，如果要继续安装过程，请重新执行此处的 export 命令</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">MASTER_IP</span><span class="token operator">=</span><span class="token number">192.168</span>.210.20
+<span class="token comment"># 替换 apiserver.demo 为 您想要的 dnsName</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">APISERVER_NAME</span><span class="token operator">=</span>asiainfo.com
+<span class="token comment"># Kubernetes 容器组所在的网段，该网段安装完成后，由 kubernetes 创建，事先并不存在于您的物理网络中</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">POD_SUBNET</span><span class="token operator">=</span><span class="token number">10.100</span>.0.1/16
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">${MASTER_IP}</span>    <span class="token variable">${APISERVER_NAME}</span>&quot;</span> <span class="token operator">&gt;&gt;</span> /etc/hosts
+<span class="token function">curl</span> -sSL https://kuboard.cn/install-script/v1.19.x/init_master.sh <span class="token operator">|</span> <span class="token function">sh</span> -s <span class="token number">1.19</span>.5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h5 id="检查-master-初始化结果"><a href="#检查-master-初始化结果" class="header-anchor">#</a> 检查 master 初始化结果</h5> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 只在 master 节点执行</span>
+
+<span class="token comment"># 执行如下命令，等待 3-10 分钟，直到所有的容器组处于 Running 状态</span>
+<span class="token function">watch</span> kubectl get pod -n kube-system -o wide
+
+<span class="token comment"># 查看 master 节点初始化结果</span>
+kubectl get nodes -o wide
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h5 id="初始化-worker节点"><a href="#初始化-worker节点" class="header-anchor">#</a> 初始化 worker节点</h5> <p>获得 join命令参数,<strong>在 master 节点上执行</strong></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 只在 master 节点执行</span>
+kubeadm token create --print-join-command
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>可获取kubeadm join 命令及参数，如下所示</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>kubeadm <span class="token function">join</span> asiainfo.com:6443 --token ihq9xt.8klvozfnwyu3429o     --discovery-token-ca-cert-hash sha256:d79f055719dd2ebc3660ceebae75d20235cf3231e288ec967726c495386ab89a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>初始化worker,针对所有的 worker 节点执行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 只在 worker 节点执行
+# 替换 x.x.x.x 为 master 节点的内网 IP
+export MASTER_IP=192.168.210.20
+# 替换 apiserver.demo 为初始化 master 节点时所使用的 APISERVER_NAME
+export APISERVER_NAME=asiainfo.com
+echo &quot;${MASTER_IP}    ${APISERVER_NAME}&quot; &gt;&gt; /etc/hosts
+
+# 替换为 master 节点上 kubeadm token create 命令的输出
+kubeadm join asiainfo.com:6443 --token ihq9xt.8klvozfnwyu3429o     --discovery-token-ca-cert-hash sha256:d79f055719dd2ebc3660ceebae75d20235cf3231e288ec967726c495386ab89a
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h5 id="检查初始化结果"><a href="#检查初始化结果" class="header-anchor">#</a> 检查初始化结果</h5> <p>在 master 节点上执行</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 只在 master 节点执行</span>
+kubectl get nodes -o wide
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="kuboard管理工具"><a href="#kuboard管理工具" class="header-anchor">#</a> Kuboard管理工具</h4> <p>Kubernetes 图形管理工具，在 K8S 中安装 Kuboard v3</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># kubectl apply -f https://addons.kuboard.cn/kuboard/kuboard-v3.yaml</span>
+<span class="token comment"># 您也可以使用下面的指令，唯一的区别是，该指令使用华为云的镜像仓库替代 docker hub 分发 Kuboard 所需要的镜像</span>
+<span class="token comment"># master 上执行</span>
+kubectl apply -f https://addons.kuboard.cn/kuboard/kuboard-v3-swr.yaml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h5 id="等待-kuboard-v3-就绪"><a href="#等待-kuboard-v3-就绪" class="header-anchor">#</a> 等待 Kuboard v3 就绪</h5> <p><code>watch kubectl get pods -n kuboard</code></p> <h5 id="访问-kuboard"><a href="#访问-kuboard" class="header-anchor">#</a> 访问 Kuboard</h5> <ul><li>在浏览器中打开链接 <code>http://192.168.210.20:30080</code></li> <li>输入初始用户名和密码，并登录
+<ul><li>用户名： <code>admin</code></li> <li>密码： <code>Kuboard123</code></li></ul></li></ul> <h4 id="k8s基本操作"><a href="#k8s基本操作" class="header-anchor">#</a> k8s基本操作</h4> <h5 id="namespace操作"><a href="#namespace操作" class="header-anchor">#</a> namespace操作</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>kubectl get ns
+kubectl create ns test
+kubectl delete ns test
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment">#调用脚本执行命令</span>
+<span class="token comment">#vi namespace-test.yml</span>
+
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Namespace
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> test
+	
+<span class="token comment">#调用</span>
+kubectl apply <span class="token punctuation">-</span>f namespace<span class="token punctuation">-</span>test.yml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h5 id="pod操作"><a href="#pod操作" class="header-anchor">#</a> pod操作</h5> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code>kubectl get pods
+kubectl get pods <span class="token punctuation">-</span>A
+kubectl get pods <span class="token punctuation">-</span>n test
+
+kubectl run nginx <span class="token punctuation">-</span><span class="token punctuation">-</span>image=nginx <span class="token punctuation">-</span>n test
+kubectl describe pods nginx <span class="token punctuation">-</span>n test
+
+kubectl delete pods nginx <span class="token punctuation">-</span>n test
+
+kubectl exec <span class="token punctuation">-</span>it nginx bash <span class="token punctuation">-</span>n test
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>一个pod多个docker的yml编写</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># vi pod-nginx-tomcat.yml</span>
+
+apiVersion: v1
+kind: Pod
+metadata:
+	name:  nginx-tomcat
+	namespace: <span class="token builtin class-name">test</span>
+spec:
+	containers:
+	- image: nginx
+		name: nginx
+	- image: tomcat
+	  name: tomcat
+	  
+<span class="token comment">#kubectl apply -f pod-nginx-tomcat.yml</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h5 id="deployment"><a href="#deployment" class="header-anchor">#</a> deployment</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>kubectl get deployment -n test
+kubectl create deployment deploy-nginx -n test --image=nginx
+kubectl delete deployment deploy-nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment">#脚本方式创建</span>
+<span class="token comment">#vi nginx-deployment.yml</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+	<span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx
+        <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.14.2
+        <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+        
+<span class="token comment">#执行</span>
+kubectl apply <span class="token punctuation">-</span>f nginx<span class="token punctuation">-</span>deployment.yml <span class="token punctuation">-</span>n test
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><h5 id="service操作"><a href="#service操作" class="header-anchor">#</a> Service操作</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>kubectl expose deployment nginx-deployment --port=8888 --target-port=80 -n test
+kubectl get service -n test
+kubectl delete service nginx-deployment -n test
+#type=NodePort暴露对外端口
+kubectl expose deployment nginx-deployment --port=8888 --target-port=80 -n test --type=NodePort
+
+#根据service的ip和端口就可以访问了
+curl 10.96.110.154:8888
+http://192.168.210.20:31925/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505110935.png" alt=""></p> <p>通过脚本，pod，deployment，service一同部署</p> <p>修改deployment的脚本</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment">#脚本方式创建</span>
+<span class="token comment">#vi nginx-deployment.yml</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+	<span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx
+        <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.14.2
+        <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+	<span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+	<span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+	<span class="token key atrule">labels</span><span class="token punctuation">:</span>
+		<span class="token key atrule">app</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+	<span class="token key atrule">selector</span><span class="token punctuation">:</span>
+		<span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+	<span class="token key atrule">ports</span><span class="token punctuation">:</span>
+	<span class="token punctuation">-</span> <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8888</span>
+		<span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+	<span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
+<span class="token comment">#执行</span>
+kubectl apply <span class="token punctuation">-</span>f nginx<span class="token punctuation">-</span>deployment.yml <span class="token punctuation">-</span>n test
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h5 id="ingress"><a href="#ingress" class="header-anchor">#</a> Ingress</h5> <p>安装</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505113803.png" alt=""></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505114021.png" alt=""></p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token comment">#先删除</span>
+kubectl delete <span class="token punctuation">-</span>f nginx<span class="token punctuation">-</span>deployment.yml
+
+<span class="token comment">#脚本编写</span>
+
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">3</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx
+        <span class="token key atrule">image</span><span class="token punctuation">:</span> nginx<span class="token punctuation">:</span>1.14.2
+        <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> nginx
+  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8888</span>
+    <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Ingress
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>ingress
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">ingressClassName</span><span class="token punctuation">:</span> ingress
+  <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">host</span><span class="token punctuation">:</span> asiainfo.nginx.com
+    <span class="token key atrule">http</span><span class="token punctuation">:</span>
+      <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">path</span><span class="token punctuation">:</span> /
+        <span class="token key atrule">pathType</span><span class="token punctuation">:</span> Prefix
+        <span class="token key atrule">backend</span><span class="token punctuation">:</span>
+          <span class="token key atrule">service</span><span class="token punctuation">:</span>
+            <span class="token key atrule">name</span><span class="token punctuation">:</span> nginx<span class="token punctuation">-</span>deployment
+            <span class="token key atrule">port</span><span class="token punctuation">:</span>
+              <span class="token key atrule">number</span><span class="token punctuation">:</span> <span class="token number">8888</span>
+    		
+<span class="token comment">#执行</span>
+kubectl apply <span class="token punctuation">-</span>f nginx<span class="token punctuation">-</span>deployment.yml <span class="token punctuation">-</span>n test
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br></div></div><p>配置本地机器的域名映射</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#vi /etc/hosts</span>
+<span class="token number">192.168</span>.210.20 asiainfo.nginx.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>域名访问</p> <p>服务的端口</p> <p>http://asiainfo.nginx.com:32131/</p> <p>ingress端口</p> <p>http://asiainfo.nginx.com:31610/</p> <p>部署的k8s的yml脚本</p> <h4 id="jenkins部署到k8s"><a href="#jenkins部署到k8s" class="header-anchor">#</a> jenkins部署到k8s</h4> <h5 id="k8s部署脚本"><a href="#k8s部署脚本" class="header-anchor">#</a> k8s部署脚本</h5> <p>idea项目新增yml文件，pipeline.yml</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> pipeline
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> pipeline
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">2</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> pipeline
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> pipeline
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+        <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> pipeline
+          <span class="token key atrule">image</span><span class="token punctuation">:</span> 192.168.210.10<span class="token punctuation">:</span>80/repo/pipeline<span class="token punctuation">:</span>v4.0.0
+          <span class="token key atrule">imagePullPolicy</span><span class="token punctuation">:</span> Always
+          <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+            <span class="token punctuation">-</span> <span class="token key atrule">containerPort</span><span class="token punctuation">:</span> <span class="token number">8081</span>
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> pipeline
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> pipeline
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> pipeline
+  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">8081</span>
+      <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">8081</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> networking.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Ingress
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">namespace</span><span class="token punctuation">:</span> test
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> pipeline
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">ingressClassName</span><span class="token punctuation">:</span> ingress
+  <span class="token key atrule">rules</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> <span class="token key atrule">host</span><span class="token punctuation">:</span> asiainfo.nginx.com
+      <span class="token key atrule">http</span><span class="token punctuation">:</span>
+        <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+          <span class="token punctuation">-</span> <span class="token key atrule">path</span><span class="token punctuation">:</span> /
+            <span class="token key atrule">pathType</span><span class="token punctuation">:</span> Prefix
+            <span class="token key atrule">backend</span><span class="token punctuation">:</span>
+              <span class="token key atrule">service</span><span class="token punctuation">:</span>
+                <span class="token key atrule">name</span><span class="token punctuation">:</span> pipeline
+                <span class="token key atrule">port</span><span class="token punctuation">:</span>
+                  <span class="token key atrule">number</span><span class="token punctuation">:</span> <span class="token number">8081</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><p>kubectl apply -f pipeline.yml</p> <h5 id="配置k8s私服信息"><a href="#配置k8s私服信息" class="header-anchor">#</a> 配置k8s私服信息</h5> <ol><li>kuboard中配置harbor服务信息</li></ol> <p><img src="/Users/mac/Downloads/Devops.assets/image-20220505212420033.png" alt="image-20220505212420033"></p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505212929.png" alt=""></p> <ol start="2"><li>docker daemon配置</li></ol> <p>在两台机器中都要配置</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#vi /etc/docker/daemon.json</span>
+<span class="token punctuation">{</span>
+ <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;192.168.210.10:80&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token comment">#重启docker</span>
+systemctl restart <span class="token function">docker</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="3"><li>连接harbor 测试，两台都要联通</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker login 192.168.210.10:80 -u admin -p Harbor12345
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h5 id="jenkins整合k8s"><a href="#jenkins整合k8s" class="header-anchor">#</a> Jenkins整合k8s</h5> <ol><li>系统管理-&gt;系统配置，配置到k8s的ssh服务</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>k8s
+192.168.210.20
+root/dongjb
+/usr/local/k8s
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505225840.png" alt=""></p> <ol start="2"><li>生成传输pipeline.yml的ssh的脚本</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220505230454.png" alt=""></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sshPublisher(publishers: [sshPublisherDesc(configName: 'k8s', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'pipeline.yml')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>修改jenkinsfile</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>        stage('通过publish over ssh 通知目标服务器部署') {
+            steps {
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'test', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: &quot;deploy.sh $haborAddress $haborRepo $JOB_NAME $tag $port&quot;, execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+            }
+        }
+        
+  改成
+        stage('通过publish over ssh 传送yml文件到k8smaster上') {
+            steps {
+sshPublisher(publishers: [sshPublisherDesc(configName: 'k8s', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'pipeline.yml')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+            }
+        }  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h5 id="执行k8s远端脚本"><a href="#执行k8s远端脚本" class="header-anchor">#</a> 执行k8s远端脚本</h5> <ol><li>ssh免密登录</li></ol> <p>jenkins容器内能够直接执行k8smaster主机上的脚本</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#jenkins容器生成公钥</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it jenkins <span class="token function">bash</span>
+ssh-keygen -t rsa
+<span class="token function">cat</span> id_rsa.pub
+<span class="token comment">#把公钥放到k8smaster上</span>
+ssh-keygen -t rsa
+<span class="token builtin class-name">cd</span> .ssh
+<span class="token function">touch</span> authorized_keys
+<span class="token comment">#把公钥拷贝到这个文件中</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ol start="2"><li>执行脚本</li></ol> <p>生成脚本</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ssh root@192.168.210.20 kubectl apply -f /usr/local/k8s/pipeline.yml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507095457.png" alt=""></p> <p>pipeline.yml中新增步骤</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>        stage('执行远程k8smaster的kubectl命令') {
+            steps {
+                sh 'ssh root@192.168.210.20 kubectl apply -f /usr/local/k8s/pipeline.yml'
+            }
+        }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="自动化ci操作"><a href="#自动化ci操作" class="header-anchor">#</a> 自动化ci操作</h4> <ol><li>下载gitlab插件</li> <li>配置gitlab hook信息</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507112905.png" alt=""></p> <ol start="3"><li>hook信息在gitlab中配置</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>http://192.168.210.10:8099/project/pipeline
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507113312.png" alt=""></p> <blockquote><p>Url is blocked: Requests to the local network are not allowed</p></blockquote> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507113723.png" alt=""></p> <blockquote><p>Hook executed successfully but returned HTTP 403 </p><html><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8"> <title>Error 403 anonymous is missing the Job/Build permission</title></head> <body><h2>HTTP ERROR 403 anonymous is missing the Job/Build permission</h2> <table><tr><th>URI:</th><td>/project/pipeline</td></tr> <tr><th>STATUS:</th><td>403</td></tr> <tr><th>MESSAGE:</th><td>anonymous is missing the Job/Build permission</td></tr> <tr><th>SERVLET:</th><td>Stapler</td></tr></table> <hr><a href="https://eclipse.org/jetty">Powered by Jetty:// 9.4.43.v20210629</a><hr></body></html><p></p></blockquote> <p>jenkins 系统管理-》 系统配置</p> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507114627.png" alt=""></p> <ol start="4"><li>去掉参数化构建</li></ol> <p><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/mall/20220507115330.png" alt=""></p> <p>jenkinsfile文件中的tag变量替换掉</p> <ol start="5"><li>k8s 代码变动就构建，解决unchangge</li></ol> <p>jenkinsfile修改</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>        stage('执行远程k8smaster的kubectl命令') {
+            steps {
+                sh '''ssh root@192.168.210.20 kubectl apply -f /usr/local/k8s/pipeline.yml
+                ssh root@192.168.210.20 kubectl rollout restart deployment pipeline -n test'''
+            }
+        }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/dong-jianbin/docment/edit/master/docs/07.项目/03.devops/01.devops.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/07/26, 06:11:07</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/601d2d/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">kafkatodb</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/601d2d/" class="prev">kafkatodb</a></span> <!----></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/866652/"><div>
+            HDFS
+            <!----></div></a> <span class="date">05-15</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/81241e/"><div>
+            入门
+            <!----></div></a> <span class="date">05-13</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/8a8674/"><div>
+            股票
+            <!----></div></a> <span class="date">03-13</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:416355221@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/dong-jianbin" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>Dong jianbin | <a href="https://github.com/dong-jianbin/docment/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><span class="close-but">×</span> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;max-width:160px;max-height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.6d4d842b.js" defer></script><script src="/assets/js/2.0fd9f73a.js" defer></script><script src="/assets/js/24.588b162f.js" defer></script>
+  </body>
+</html>

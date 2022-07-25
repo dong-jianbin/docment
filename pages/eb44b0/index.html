@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置国内yum源和epel源 | 董建斌的博客</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/img/home.jpeg">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="web前端技术博客,简洁至上,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github等技术文章。">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.b0cf3990.css" as="style"><link rel="preload" href="/assets/js/app.6d4d842b.js" as="script"><link rel="preload" href="/assets/js/2.0fd9f73a.js" as="script"><link rel="preload" href="/assets/js/13.25b8826c.js" as="script"><link rel="prefetch" href="/assets/js/10.30079daa.js"><link rel="prefetch" href="/assets/js/11.7f6a0939.js"><link rel="prefetch" href="/assets/js/12.ed5435d3.js"><link rel="prefetch" href="/assets/js/14.76f97bc8.js"><link rel="prefetch" href="/assets/js/15.fbc57fc3.js"><link rel="prefetch" href="/assets/js/16.00f2abfa.js"><link rel="prefetch" href="/assets/js/17.bc136f60.js"><link rel="prefetch" href="/assets/js/18.4d03df41.js"><link rel="prefetch" href="/assets/js/19.479cc21a.js"><link rel="prefetch" href="/assets/js/20.7e179576.js"><link rel="prefetch" href="/assets/js/21.240900bb.js"><link rel="prefetch" href="/assets/js/22.760ddcdd.js"><link rel="prefetch" href="/assets/js/23.0eab3370.js"><link rel="prefetch" href="/assets/js/24.588b162f.js"><link rel="prefetch" href="/assets/js/25.1c0ee689.js"><link rel="prefetch" href="/assets/js/26.85709468.js"><link rel="prefetch" href="/assets/js/27.b7099b40.js"><link rel="prefetch" href="/assets/js/28.c35924d3.js"><link rel="prefetch" href="/assets/js/29.8cafffa8.js"><link rel="prefetch" href="/assets/js/3.deaca20e.js"><link rel="prefetch" href="/assets/js/30.575b6478.js"><link rel="prefetch" href="/assets/js/31.e17b3314.js"><link rel="prefetch" href="/assets/js/32.05421eeb.js"><link rel="prefetch" href="/assets/js/33.d17be6c8.js"><link rel="prefetch" href="/assets/js/34.bdacecf3.js"><link rel="prefetch" href="/assets/js/35.2cdfbdfe.js"><link rel="prefetch" href="/assets/js/4.c0dbb0eb.js"><link rel="prefetch" href="/assets/js/5.41b1224c.js"><link rel="prefetch" href="/assets/js/6.e5641358.js"><link rel="prefetch" href="/assets/js/7.f95c6863.js"><link rel="prefetch" href="/assets/js/8.079a2b3f.js"><link rel="prefetch" href="/assets/js/9.34e7a5b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b0cf3990.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu have-body-img"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/img/home.jpeg" alt="董建斌的博客" class="logo"> <span class="site-name can-hide">董建斌的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FreeSwitch" class="dropdown-title"><a href="/web/" class="link-title">FreeSwitch</a> <span class="title" style="display:none;">FreeSwitch</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>安装使用</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a61298/" class="nav-link">FS安装使用</a></li></ul></li><li class="dropdown-item"><h4>呼叫中心</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/c3da99/" class="nav-link">项目架构</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识图谱" class="dropdown-title"><a href="/KnowledgeGraph/" class="link-title">知识图谱</a> <span class="title" style="display:none;">知识图谱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ec61c3/" class="nav-link">neo4j</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><a href="/project/" class="link-title">项目</a> <span class="title" style="display:none;">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3ceacd/" class="nav-link">超级工作流</a></li><li class="dropdown-item"><!----> <a href="/pages/601d2d/" class="nav-link">kafka2db</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/2c361a/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/81241e/" class="nav-link">hadoop入门</a></li></ul></div></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/dong-jianbin/docment" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/dong-jianbin/drawing-bed/img/22168884.jpeg"> <div class="blogger-info"><h3>董建斌</h3> <span>此间少年 气吞山河</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="FreeSwitch" class="dropdown-title"><a href="/web/" class="link-title">FreeSwitch</a> <span class="title" style="display:none;">FreeSwitch</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>安装使用</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/a61298/" class="nav-link">FS安装使用</a></li></ul></li><li class="dropdown-item"><h4>呼叫中心</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/c3da99/" class="nav-link">项目架构</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="知识图谱" class="dropdown-title"><a href="/KnowledgeGraph/" class="link-title">知识图谱</a> <span class="title" style="display:none;">知识图谱</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/ec61c3/" class="nav-link">neo4j</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><a href="/project/" class="link-title">项目</a> <span class="title" style="display:none;">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/3ceacd/" class="nav-link">超级工作流</a></li><li class="dropdown-item"><!----> <a href="/pages/601d2d/" class="nav-link">kafka2db</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><a href="/pages/2c361a/" class="link-title">大数据</a> <span class="title" style="display:none;">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/81241e/" class="nav-link">hadoop入门</a></li></ul></div></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/dong-jianbin/docment" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>服务端</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/a61298/" class="sidebar-link">安装使用freeswitch</a></li><li><a href="/pages/03eecb/" class="sidebar-link">freeswitch连接postgres数据库</a></li><li><a href="/pages/0347ae/" class="sidebar-link">FS-Cli常用命令简介</a></li><li><a href="/pages/9a183b/" class="sidebar-link">FreeSWITCH 添加中文语音包</a></li><li><a href="/pages/eb44b0/" aria-current="page" class="active sidebar-link">配置国内yum源和epel源</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/pages/38b644/" class="sidebar-link">Linux安装postgresql</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>呼叫中心</span> <span class="arrow right"></span></p> <!----></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/web/#freeswitch" data-v-06225672>freeswitch</a></li><li data-v-06225672><a href="/web/#服务端" data-v-06225672>服务端</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/dong-jianbin/" target="_blank" title="作者" class="beLink" data-v-06225672>dong-jianbin</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-01-28</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">配置国内yum源和epel源<!----></h1> <div class="page-slot page-slot-top"><!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+     <ins class="adsbygoogle"
+          style="display:inline-block;width:100%;max-height:90px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6625304284"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="theme-vdoing-content content__default"><h3 id="_1-首先进入-etc-yum-repos-d-目录下-新建一个repo-bak目录-用于保存系统中原来的repo文件"><a href="#_1-首先进入-etc-yum-repos-d-目录下-新建一个repo-bak目录-用于保存系统中原来的repo文件" class="header-anchor">#</a> 1. 首先进入<code>/etc/yum.repos.d/</code>目录下，新建一个repo_bak目录，用于保存系统中原来的repo文件</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@bogon ~<span class="token punctuation">]</span><span class="token comment"># cd /etc/yum.repos.d/</span>
+
+<span class="token punctuation">[</span>root@bogon yum.repos.d<span class="token punctuation">]</span><span class="token comment"># mkdir repo_bak</span>
+
+<span class="token punctuation">[</span>root@bogon yum.repos.d<span class="token punctuation">]</span><span class="token comment"># mv *.repo repo_bak/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_2-在centos中配置使用网易和阿里的开源镜像"><a href="#_2-在centos中配置使用网易和阿里的开源镜像" class="header-anchor">#</a> 2. 在CentOS中配置使用网易和阿里的开源镜像</h3> <p>到网易和阿里开源镜像站点下载系统对应版本的repo文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@bogon yum.repos.d<span class="token punctuation">]</span><span class="token comment"># wget http://mirrors.aliyun.com/repo/Centos-7.repo</span>
+
+<span class="token punctuation">[</span>root@bogon yum.repos.d<span class="token punctuation">]</span><span class="token comment"># wget http://mirrors.163.com/.help/CentOS7-Base-163.repo</span>
+
+<span class="token punctuation">[</span>root@bogon yum.repos.d<span class="token punctuation">]</span><span class="token comment"># ls</span>
+Centos-7.repo  CentOS-Base-163.repo  repo.bak
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>或者手动下载repo文件并上传到<code>/etc/yum.repos.d/</code>目录</p> <p><a href="http://mirrors.163.com/.help/centos.html" target="_blank" rel="noopener noreferrer">网易开源镜像站<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://opsx.alibaba.com/mirror?lang=zh-cn" target="_blank" rel="noopener noreferrer">阿里开源镜像站<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_3-清除系统yum缓存并生成新的yum缓存"><a href="#_3-清除系统yum缓存并生成新的yum缓存" class="header-anchor">#</a> 3.清除系统yum缓存并生成新的yum缓存</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@bogon yum.repos.d]# ls    	# 列出/etc/yum.repos.d/目录下的文件
+Centos-7.repo  CentOS-Base-163.repo  repo.bak
+
+[root@bogon yum.repos.d]# yum clean all		# 清除系统所有的yum缓存
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Cleaning repos: base extras updates
+Cleaning up everything
+Cleaning up list of fastest mirrors
+
+[root@bogon yum.repos.d]# yum makecache		# 生成yum缓存
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+base                                                                                  | 3.6 kB  00:00:00     
+extras                                                                                | 3.4 kB  00:00:00     
+updates                                                                               | 3.4 kB  00:00:00     
+(1/12): base/7/x86_64/filelists_db                                                    | 6.7 MB  00:00:02     
+(2/12): base/7/x86_64/group_gz                                                        | 156 kB  00:00:02     
+(3/12): base/7/x86_64/other_db                                                        | 2.5 MB  00:00:01     
+(4/12): base/7/x86_64/primary_db                                                      | 5.7 MB  00:00:02     
+(5/12): extras/7/x86_64/prestodelta                                                   |  51 kB  00:00:01     
+(6/12): extras/7/x86_64/filelists_db                                                  | 494 kB  00:00:02     
+(7/12): extras/7/x86_64/other_db                                                      |  86 kB  00:00:00     
+(8/12): extras/7/x86_64/primary_db                                                    | 130 kB  00:00:01     
+(9/12): updates/7/x86_64/prestodelta                                                  | 406 kB  00:00:01     
+(10/12): updates/7/x86_64/filelists_db                                                | 2.1 MB  00:00:01     
+(11/12): updates/7/x86_64/other_db                                                    | 354 kB  00:00:00     
+(12/12): updates/7/x86_64/primary_db                                                  | 3.6 MB  00:00:01     
+Determining fastest mirrors
+Metadata Cache Created
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h3 id="_4-安装epel源"><a href="#_4-安装epel源" class="header-anchor">#</a> 4.安装epel源</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@bogon yum.repos.d]# yum list | grep epel-release
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+epel-release.noarch                         7-9                        extras   
+
+[root@bogon yum.repos.d]# yum install -y epel-release
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Loading mirror speeds from cached hostfile
+Resolving Dependencies
+--&gt; Running transaction check
+---&gt; Package epel-release.noarch 0:7-9 will be installed
+--&gt; Finished Dependency Resolution
+
+Dependencies Resolved
+
+=============================================================================================================
+ Package                       Arch                    Version                 Repository               Size
+=============================================================================================================
+Installing:
+ epel-release                  noarch                  7-9                     extras                   14 k
+
+Transaction Summary
+=============================================================================================================
+Install  1 Package
+
+Total download size: 14 k
+Installed size: 24 k
+Downloading packages:
+epel-release-7-9.noarch.rpm                                                           |  14 kB  00:00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : epel-release-7-9.noarch                                                                   1/1 
+  Verifying  : epel-release-7-9.noarch                                                                   1/1 
+
+Installed:
+  epel-release.noarch 0:7-9                                                                                  
+
+Complete!
+[root@bogon yum.repos.d]# ls			# epel源安装成功，比原来多了一个epel.repo和epel-testing.repo文件
+Centos-7.repo  CentOS-Base-163.repo  epel.repo  epel-testing.repo  repo.bak
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><h3 id="_5-使用阿里开源镜像提供的epel源"><a href="#_5-使用阿里开源镜像提供的epel源" class="header-anchor">#</a> 5.使用阿里开源镜像提供的epel源</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@bogon yum.repos.d]# wget -O /etc/yum.repos.d/epel-7.repo http://mirrors.aliyun.com/repo/epel-7.repo    # 下载阿里开源镜像的epel源文件
+--2018-03-08 20:22:14--  http://mirrors.aliyun.com/repo/epel-7.repo
+Resolving mirrors.aliyun.com (mirrors.aliyun.com)... 183.2.199.237, 113.96.109.95, 113.96.109.93, ...
+Connecting to mirrors.aliyun.com (mirrors.aliyun.com)|183.2.199.237|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1084 (1.1K) [application/octet-stream]
+Saving to: ‘/etc/yum.repos.d/epel-7.repo’
+
+100%[=================================================================================================&gt;] 1,084       --.-K/s   in 0s      
+
+2018-03-08 20:22:14 (130 MB/s) - ‘/etc/yum.repos.d/epel-7.repo’ saved [1084/1084]
+
+[root@bogon yum.repos.d]# ls
+CentOS7-Base-163.repo  Centos-7.repo  epel-7.repo  epel.repo  epel-testing.repo  repo_bak
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="_6-再次清除系统yum缓存-并重新生成新的yum缓存"><a href="#_6-再次清除系统yum缓存-并重新生成新的yum缓存" class="header-anchor">#</a> 6.再次清除系统yum缓存，并重新生成新的yum缓存</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@bogon yum.repos.d]# yum clean all
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Repository epel is listed more than once in the configuration
+Repository epel-debuginfo is listed more than once in the configuration
+Repository epel-source is listed more than once in the configuration
+Cleaning repos: base epel extras updates
+Cleaning up everything
+Cleaning up list of fastest mirrors
+
+[root@bogon yum.repos.d]# yum makecache
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Repository epel is listed more than once in the configuration
+Repository epel-debuginfo is listed more than once in the configuration
+Repository epel-source is listed more than once in the configuration
+base                                                                                                                | 3.6 kB  00:00:00     
+epel                                                                                                                | 4.7 kB  00:00:00     
+extras                                                                                                              | 3.4 kB  00:00:00     
+updates                                                                                                             | 3.4 kB  00:00:00     
+(1/18): base/7/x86_64/group_gz                                                                                      | 156 kB  00:00:01     
+(2/18): base/7/x86_64/filelists_db                                                                                  | 6.7 MB  00:00:07     
+(3/18): base/7/x86_64/primary_db                                                                                    | 5.7 MB  00:00:06     
+(4/18): epel/x86_64/group_gz                                                                                        | 266 kB  00:00:01     
+(5/18): epel/x86_64/updateinfo                                                                                      | 899 kB  00:00:02     
+(6/18): epel/x86_64/prestodelta                                                                                     | 7.1 kB  00:00:00     
+(7/18): base/7/x86_64/other_db                                                                                      | 2.5 MB  00:00:05     
+(8/18): epel/x86_64/primary_db                                                                                      | 6.3 MB  00:00:04     
+(9/18): extras/7/x86_64/filelists_db                                                                                | 636 kB  00:00:00     
+(10/18): extras/7/x86_64/primary_db                                                                                 | 166 kB  00:00:00     
+(11/18): extras/7/x86_64/other_db                                                                                   | 108 kB  00:00:00     
+(12/18): extras/7/x86_64/prestodelta                                                                                | 102 kB  00:00:01     
+(13/18): epel/x86_64/other_db                                                                                       | 3.0 MB  00:00:01     
+(14/18): epel/x86_64/filelists_db                                                                                   |  10 MB  00:00:09     
+(15/18): updates/7/x86_64/filelists_db                                                                              | 3.5 MB  00:00:02     
+(16/18): updates/7/x86_64/prestodelta                                                                               | 771 kB  00:00:02     
+(17/18): updates/7/x86_64/other_db                                                                                  | 621 kB  00:00:00     
+(18/18): updates/7/x86_64/primary_db                                                                                | 6.0 MB  00:00:03     
+Determining fastest mirrors
+ * epel: mirrors.aliyun.com
+Metadata Cache Created
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h3 id="_7-查看系统可用的yum源和所有的yum源"><a href="#_7-查看系统可用的yum源和所有的yum源" class="header-anchor">#</a> 7.查看系统可用的yum源和所有的yum源</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@bogon yum.repos.d]# yum repolist enabled
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Repository epel is listed more than once in the configuration
+Repository epel-debuginfo is listed more than once in the configuration
+Repository epel-source is listed more than once in the configuration
+Loading mirror speeds from cached hostfile
+ * epel: mirrors.aliyun.com
+repo id                                            repo name                                                                         status
+base/7/x86_64                                      CentOS-7 - Base - 163.com                                                          9,591
+epel/x86_64                                        Extra Packages for Enterprise Linux 7 - x86_64                                    12,382
+extras/7/x86_64                                    CentOS-7 - Extras - 163.com                                                          390
+updates/7/x86_64                                   CentOS-7 - Updates - 163.com                                                       1,941
+repolist: 24,304
+
+[root@bogon yum.repos.d]# yum repolist all
+Loaded plugins: fastestmirror, langpacks
+Repository base is listed more than once in the configuration
+Repository updates is listed more than once in the configuration
+Repository extras is listed more than once in the configuration
+Repository centosplus is listed more than once in the configuration
+Repository epel is listed more than once in the configuration
+Repository epel-debuginfo is listed more than once in the configuration
+Repository epel-source is listed more than once in the configuration
+Loading mirror speeds from cached hostfile
+ * epel: mirrors.aliyun.com
+repo id                                     repo name                                                                       status
+base/7/x86_64                               CentOS-7 - Base - 163.com                                                       enabled:  9,591
+centosplus/7/x86_64                         CentOS-7 - Plus - 163.com                                                       disabled
+contrib/7/x86_64                            CentOS-7 - Contrib - mirrors.aliyun.com                                         disabled
+epel/x86_64                                 Extra Packages for Enterprise Linux 7 - x86_64                                  enabled: 12,382
+epel-debuginfo/x86_64                       Extra Packages for Enterprise Linux 7 - x86_64 - Debug                          disabled
+epel-source                                 Extra Packages for Enterprise Linux 7 - x86_64 - Source                         disabled
+epel-testing/x86_64                         Extra Packages for Enterprise Linux 7 - Testing - x86_64                        disabled
+epel-testing-debuginfo/x86_64               Extra Packages for Enterprise Linux 7 - Testing - x86_64 - Debug                disabled
+epel-testing-source/x86_64                  Extra Packages for Enterprise Linux 7 - Testing - x86_64 - Source               disabled
+extras/7/x86_64                             CentOS-7 - Extras - 163.com                                                     enabled:    390
+updates/7/x86_64                            CentOS-7 - Updates - 163.com                                                    enabled:  1,941
+repolist: 24,304
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><div class="edit-link"><a href="https://github.com/dong-jianbin/docment/edit/master/docs/01.freeswitch/25.服务端/20.CentOS7系统配置国内yum源和epel源.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/07/26, 06:11:07</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/9a183b/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">FreeSWITCH 添加中文语音包</div></a> <a href="/pages/38b644/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">Linux安装postgresql</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/9a183b/" class="prev">FreeSWITCH 添加中文语音包</a></span> <span class="next"><a href="/pages/38b644/">Linux安装postgresql</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/866652/"><div>
+            HDFS
+            <!----></div></a> <span class="date">05-15</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/81241e/"><div>
+            入门
+            <!----></div></a> <span class="date">05-13</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/8ffda2/"><div>
+            devops
+            <!----></div></a> <span class="date">05-07</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:416355221@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/dong-jianbin" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2022
+    <span>Dong jianbin | <a href="https://github.com/dong-jianbin/docment/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <div class="body-bg" style="background:url() center center / cover no-repeat;opacity:0.5;"></div> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><span class="close-but">×</span> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;max-width:160px;max-height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.6d4d842b.js" defer></script><script src="/assets/js/2.0fd9f73a.js" defer></script><script src="/assets/js/13.25b8826c.js" defer></script>
+  </body>
+</html>
